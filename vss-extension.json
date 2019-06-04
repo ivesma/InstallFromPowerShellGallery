@@ -1,0 +1,77 @@
+{
+    "manifestVersion": 1,
+    "id": "IvesMa-InstallFromPowerShellGallery-Task",
+    "name": "Install From PowerShell Gallery build task",
+    "version": "1.0.0",
+    "publisher": "IvesMa",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Build extension that enable you to install a mudule from PowerShell Gallery.",
+    "categories": [
+        "Build and release"
+    ],
+    "tags": [
+        "Gallery",
+        "Build",
+        "powershell",
+        "Analyzer",
+        "Install",
+        "Release"
+    ],
+    "screenshots": [
+        {
+            "path": "InstallFromPowerShellGallery/images/ps.png"
+        },
+        {
+            "path": "InstallFromPowerShellGallery/images/scriptanalyzer1.png"
+        },
+        {
+            "path": "InstallFromPowerShellGallery/images/scriptanalyzer2.png"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "readme.md"
+        },
+        "license": {
+            "path": "license.txt"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/ivesma/InstallFromPowerShellGallery"
+        },
+        "support": {
+            "uri": "https://github.com/ivesma/InstallFromPowerShellGallery"
+        }
+    },
+    "branding": {
+        "color": "rgb(36, 43, 50)",
+        "theme": "dark"
+    },
+    "icons": {
+        "default": "InstallFromPowerShellGallery/images/psgallerylogo.png"
+    },
+    "files": [
+        {
+            "path": "InstallFromPowerShellGallery",
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "InstallFromPowerShellGallery-Task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "InstallFromPowerShellGallery"
+            }
+        }
+    ]
+}
